@@ -1,6 +1,6 @@
 module github.com/gofiber/contrib/otelfiber/example
 
-go 1.23
+go 1.24.4
 
 replace github.com/gofiber/contrib/otelfiber/v2 => ../
 
