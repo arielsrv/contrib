@@ -26,5 +26,5 @@ require (
 	github.com/valyala/bytebufferpool v1.0.0 // indirect
 	github.com/valyala/tcplisten v1.0.0 // indirect
 	golang.org/x/sys v0.28.0 // indirect
-	golang.org/x/text v0.14.0 // indirect
+	golang.org/x/text v0.27.0 // indirect
 )
