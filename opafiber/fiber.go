@@ -3,10 +3,11 @@ package opafiber
 import (
 	"context"
 	"fmt"
+	"io"
+
 	"github.com/gofiber/fiber/v2"
 	"github.com/gofiber/fiber/v2/utils"
 	"github.com/open-policy-agent/opa/rego"
-	"io"
 )
 
 type InputCreationFunc func(c *fiber.Ctx) (map[string]interface{}, error)
@@ -46,9 +47,9 @@ func New(cfg Config) fiber.Handler {
 		}
 		if cfg.IncludeQueryString {
 			queryStringData := make(map[string][]string)
-			c.Request().URI().QueryArgs().VisitAll(func(key, value []byte) {
-				queryStringData[utils.UnsafeString(key)] = append(queryStringData[utils.UnsafeString(key)], utils.UnsafeString(value))
-			})
+			for k, v := range c.Request().URI().QueryArgs().All() {
+				queryStringData[utils.UnsafeString(k)] = append(queryStringData[utils.UnsafeString(k)], utils.UnsafeString(v))
+			}
 			input["query"] = queryStringData
 		}
 		if len(cfg.IncludeHeaders) > 0 {
