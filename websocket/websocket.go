@@ -131,19 +131,19 @@ func New(handler func(*Conn), config ...Config) fiber.Handler {
 		}
 
 		// queries
-		c.Context().QueryArgs().VisitAll(func(key, value []byte) {
-			conn.queries[string(key)] = string(value)
-		})
+		for k, v := range c.Context().QueryArgs().All() {
+			conn.queries[string(k)] = string(v)
+		}
 
 		// cookies
-		c.Context().Request.Header.VisitAllCookie(func(key, value []byte) {
-			conn.cookies[string(key)] = string(value)
-		})
+		for k, v := range c.Context().Request.Header.Cookies() {
+			conn.cookies[string(k)] = string(v)
+		}
 
 		// headers
-		c.Context().Request.Header.VisitAll(func(key, value []byte) {
-			conn.headers[string(key)] = string(value)
-		})
+		for k, v := range c.Context().Request.Header.All() {
+			conn.headers[string(k)] = string(v)
+		}
 
 		// ip address
 		conn.ip = c.IP()

@@ -209,14 +209,14 @@ func (c *Config) logger(fc *fiber.Ctx, latency time.Duration, err error) zerolog
 			}
 			if c.WrapHeaders {
 				dict := zerolog.Dict()
-				fc.Request().Header.VisitAll(func(k, v []byte) {
-					dict.Bytes(string(k), v)
-				})
+				for k, v := range fc.Request().Header.All() {
+					dict.Str(string(k), string(v))
+				}
 				zc = zc.Dict(field, dict)
 			} else {
-				fc.Request().Header.VisitAll(func(k, v []byte) {
-					zc = zc.Bytes(string(k), v)
-				})
+				for k, v := range fc.Request().Header.All() {
+					zc = zc.Str(string(k), string(v))
+				}
 			}
 		case FieldResHeaders:
 			if c.FieldsSnakeCase {
@@ -224,14 +224,14 @@ func (c *Config) logger(fc *fiber.Ctx, latency time.Duration, err error) zerolog
 			}
 			if c.WrapHeaders {
 				dict := zerolog.Dict()
-				fc.Response().Header.VisitAll(func(k, v []byte) {
-					dict.Bytes(string(k), v)
-				})
+				for k, v := range fc.Response().Header.All() {
+					dict.Str(string(k), string(v))
+				}
 				zc = zc.Dict(field, dict)
 			} else {
-				fc.Response().Header.VisitAll(func(k, v []byte) {
-					zc = zc.Bytes(string(k), v)
-				})
+				for k, v := range fc.Response().Header.All() {
+					zc = zc.Str(string(k), string(v))
+				}
 			}
 		}
 	}

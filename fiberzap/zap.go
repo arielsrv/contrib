@@ -1,10 +1,10 @@
 package fiberzap
 
 import (
-    "os"
-    "strconv"
-    "sync"
-    "time"
+	"os"
+	"strconv"
+	"sync"
+	"time"
 
 	"github.com/gofiber/fiber/v2"
 	"go.uber.org/zap"
@@ -171,9 +171,9 @@ func New(config ...Config) fiber.Handler {
 					fields = append(fields, zap.String("error", chainErr.Error()))
 				}
 			case "reqHeaders":
-				c.Request().Header.VisitAll(func(k, v []byte) {
+				for k, v := range c.Request().Header.All() {
 					fields = append(fields, zap.ByteString(string(k), v))
-				})
+				}
 			}
 		}
 
