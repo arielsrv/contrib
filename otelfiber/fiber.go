@@ -2,9 +2,10 @@ package otelfiber
 
 import (
 	"context"
-	"github.com/gofiber/contrib/otelfiber/v2/internal"
 	"net/http"
 	"time"
+
+	"github.com/gofiber/contrib/otelfiber/v2/internal"
 
 	"github.com/gofiber/fiber/v2"
 	"github.com/gofiber/fiber/v2/utils"
@@ -109,9 +110,9 @@ func Middleware(opts ...Option) fiber.Handler {
 		copy(responseMetricAttrs, requestMetricsAttrs)
 
 		reqHeader := make(http.Header)
-		c.Request().Header.VisitAll(func(k, v []byte) {
+		for k, v := range c.Request().Header.All() {
 			reqHeader.Add(string(k), string(v))
-		})
+		}
 
 		ctx := cfg.Propagators.Extract(savedCtx, propagation.HeaderCarrier(reqHeader))
 

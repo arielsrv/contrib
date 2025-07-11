@@ -2,9 +2,10 @@ package fiberi18n
 
 import (
 	"fmt"
-	"github.com/gofiber/fiber/v2/log"
 	"path"
 	"sync"
+
+	"github.com/gofiber/fiber/v2/log"
 
 	"github.com/gofiber/fiber/v2"
 	"github.com/nicksnyder/go-i18n/v2/i18n"
@@ -114,11 +115,14 @@ func Localize(ctx *fiber.Ctx, params interface{}) (string, error) {
 	}
 
 	lang := appCfg.LangHandler(ctx, appCfg.DefaultLanguage.String())
-	localizer, _ := appCfg.localizerMap.Load(lang)
+	appCfg.mu.RLock()
+	localizerMap := appCfg.localizerMap
+	appCfg.mu.RUnlock()
+	localizer, _ := localizerMap.Load(lang)
 
 	if localizer == nil {
 		defaultLang := appCfg.DefaultLanguage.String()
-		localizer, _ = appCfg.localizerMap.Load(defaultLang)
+		localizer, _ = localizerMap.Load(defaultLang)
 	}
 
 	var localizeConfig *i18n.LocalizeConfig
