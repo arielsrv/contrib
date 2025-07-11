@@ -3,12 +3,13 @@ package opafiber
 import (
 	"bytes"
 	"errors"
-	"github.com/gofiber/fiber/v2"
-	"github.com/gofiber/fiber/v2/utils"
-	"github.com/stretchr/testify/assert"
 	"io"
 	"net/http/httptest"
 	"testing"
+
+	"github.com/gofiber/fiber/v2"
+	"github.com/gofiber/fiber/v2/utils"
+	"github.com/stretchr/testify/assert"
 )
 
 func TestPanicWhenRegoQueryEmpty(t *testing.T) {
@@ -87,9 +88,11 @@ func TestOpaRequestMethodRegoPolicyShouldReturnConfigDeniedStatusCode(t *testing
 	module := `
 package example.authz
 
+import future.keywords
+
 default allow := false
 
-allow {
+allow if {
 	input.method == "GET"
 }
 `
@@ -121,9 +124,11 @@ func TestOpaRequestPathRegoPolicyShouldReturnOK(t *testing.T) {
 	module := `
 package example.authz
 
+import future.keywords
+
 default allow := false
 
-allow {
+allow if {
 	input.path == "/path"
 }
 `
@@ -159,7 +164,7 @@ import future.keywords.in
 
 default allow := false
 
-allow {
+allow if {
 	input.query == {"testKey": ["testVal"]}
 }
 `
@@ -196,7 +201,7 @@ import future.keywords.in
 
 default allow := false
 
-allow {
+allow if {
 	input.headers == {"testHeaderKey": "testHeaderVal"}
 }
 `
@@ -233,7 +238,7 @@ package example.authz
 
 default allow := false
 
-allow {
+allow if {
 	input.custom == "test"
 }
 `
@@ -273,7 +278,7 @@ package example.authz
 
 default allow := false
 
-allow {
+allow if {
 	input.custom == "test"
 }
 `

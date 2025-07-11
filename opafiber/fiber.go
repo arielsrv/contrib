@@ -7,7 +7,7 @@ import (
 
 	"github.com/gofiber/fiber/v2"
 	"github.com/gofiber/fiber/v2/utils"
-	"github.com/open-policy-agent/opa/rego"
+	"github.com/open-policy-agent/opa/v1/rego"
 )
 
 type InputCreationFunc func(c *fiber.Ctx) (map[string]interface{}, error)
@@ -36,7 +36,7 @@ func New(cfg Config) fiber.Handler {
 		rego.Module("policy.rego", utils.UnsafeString(readedBytes)),
 	).PrepareForEval(context.Background())
 	if err != nil {
-		panic(fmt.Sprint("rego policy error: %w", err))
+		panic(fmt.Sprint("opa policy error: %w", err))
 	}
 	return func(c *fiber.Ctx) error {
 		input, err := cfg.InputCreationMethod(c)
@@ -62,16 +62,20 @@ func New(cfg Config) fiber.Handler {
 		res, err := query.Eval(context.Background(), rego.EvalInput(input))
 		if err != nil {
 			c.Response().SetStatusCode(fiber.StatusInternalServerError)
-			c.Response().SetBodyString(fmt.Sprintf("Error evaluating rego policy: %s", err))
+			c.Response().SetBodyString(fmt.Sprintf("Error evaluating opa policy: %s", err))
 			return err
 		}
-
-		if !res.Allowed() {
+		allowed := false
+		if len(res) > 0 {
+			if b, ok := res[0].Expressions[0].Value.(bool); ok {
+				allowed = b
+			}
+		}
+		if !allowed {
 			c.Response().SetStatusCode(cfg.DeniedStatusCode)
 			c.Response().SetBodyString(cfg.DeniedResponseMessage)
 			return nil
 		}
-
 		return c.Next()
 	}
 }
