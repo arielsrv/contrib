@@ -20,3 +20,9 @@
 {"level":"DEBUG","ts":"2025-07-11T09:13:52.409+0200","caller":"testing/testing.go:1792","func":"testing.tRunner","msg":"this is a debug log"}
 {"level":"DEBUG","ts":"2025-07-11T09:15:00.748+0200","caller":"testing/testing.go:1792","func":"testing.tRunner","msg":"this is a debug log"}
 {"level":"DEBUG","ts":"2025-07-11T09:15:00.749+0200","caller":"testing/testing.go:1792","func":"testing.tRunner","msg":"this is a debug log"}
+{"level":"DEBUG","ts":"2025-07-11T09:33:16.732+0200","caller":"testing/testing.go:1792","func":"testing.tRunner","msg":"this is a debug log"}
+{"level":"DEBUG","ts":"2025-07-11T09:33:16.732+0200","caller":"testing/testing.go:1792","func":"testing.tRunner","msg":"this is a debug log"}
+{"level":"DEBUG","ts":"2025-07-11T09:35:24.035+0200","caller":"testing/testing.go:1792","func":"testing.tRunner","msg":"this is a debug log"}
+{"level":"DEBUG","ts":"2025-07-11T09:35:24.036+0200","caller":"testing/testing.go:1792","func":"testing.tRunner","msg":"this is a debug log"}
+{"level":"DEBUG","ts":"2025-07-11T09:35:28.624+0200","caller":"testing/testing.go:1792","func":"testing.tRunner","msg":"this is a debug log"}
+{"level":"DEBUG","ts":"2025-07-11T09:35:28.625+0200","caller":"testing/testing.go:1792","func":"testing.tRunner","msg":"this is a debug log"}

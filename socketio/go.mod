@@ -3,7 +3,7 @@ module github.com/gofiber/contrib/socketio
 go 1.24.4
 
 require (
-	github.com/fasthttp/websocket v1.5.10
+	github.com/fasthttp/websocket v1.5.12
 	github.com/gofiber/contrib/websocket v1.3.4
 	github.com/gofiber/fiber/v2 v2.52.8
 	github.com/google/uuid v1.6.0

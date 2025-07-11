@@ -4,7 +4,7 @@ go 1.24.4
 
 require (
 	github.com/gofiber/fiber/v2 v2.52.8
-	github.com/nicksnyder/go-i18n/v2 v2.4.1
+	github.com/nicksnyder/go-i18n/v2 v2.6.0
 	golang.org/x/text v0.27.0
 	gopkg.in/yaml.v2 v2.4.0
 )
