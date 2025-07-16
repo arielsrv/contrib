@@ -6,7 +6,7 @@ require (
 	github.com/gofiber/fiber/v3 v3.0.0-beta.4
 	github.com/shirou/gopsutil/v4 v4.25.6
 	github.com/stretchr/testify v1.10.0
-	github.com/valyala/fasthttp v1.63.0
+	github.com/valyala/fasthttp v1.64.0
 )
 
 require (
@@ -32,7 +32,7 @@ require (
 	github.com/x448/float16 v0.8.4 // indirect
 	github.com/yusufpapurcu/wmi v1.2.4 // indirect
 	golang.org/x/crypto v0.40.0 // indirect
-	golang.org/x/net v0.41.0 // indirect
+	golang.org/x/net v0.42.0 // indirect
 	golang.org/x/sys v0.34.0 // indirect
 	golang.org/x/text v0.27.0 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
