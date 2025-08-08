@@ -26,5 +26,5 @@ require (
 	github.com/stretchr/testify v1.10.0
 	github.com/valyala/bytebufferpool v1.0.0 // indirect
 	golang.org/x/sys v0.34.0 // indirect
-	golang.org/x/text v0.27.0 // indirect
+	golang.org/x/text v0.28.0 // indirect
 )
