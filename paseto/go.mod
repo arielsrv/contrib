@@ -21,6 +21,6 @@ require (
 	github.com/pkg/errors v0.8.0 // indirect
 	github.com/rivo/uniseg v0.2.0 // indirect
 	github.com/valyala/bytebufferpool v1.0.0 // indirect
-	github.com/valyala/fasthttp v1.64.0 // indirect
+	github.com/valyala/fasthttp v1.65.0 // indirect
 	golang.org/x/sys v0.35.0 // indirect
 )
