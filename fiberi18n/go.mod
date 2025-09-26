@@ -5,7 +5,7 @@ go 1.24.4
 require (
 	github.com/gofiber/fiber/v2 v2.52.9
 	github.com/nicksnyder/go-i18n/v2 v2.6.0
-	golang.org/x/text v0.28.0
+	golang.org/x/text v0.29.0
 	gopkg.in/yaml.v2 v2.4.0
 )
 
@@ -18,6 +18,6 @@ require (
 	github.com/mattn/go-runewidth v0.0.16 // indirect
 	github.com/rivo/uniseg v0.4.4 // indirect
 	github.com/valyala/bytebufferpool v1.0.0 // indirect
-	github.com/valyala/fasthttp v1.65.0 // indirect
-	golang.org/x/sys v0.35.0 // indirect
+	github.com/valyala/fasthttp v1.66.0 // indirect
+	golang.org/x/sys v0.36.0 // indirect
 )
