@@ -12,3 +12,4 @@
 {"level":"ERROR","ts":"2025-07-11T09:33:16.732+0200","caller":"testing/testing.go:1792","func":"testing.tRunner","msg":"this is a warn log"}
 {"level":"ERROR","ts":"2025-07-11T09:35:24.036+0200","caller":"testing/testing.go:1792","func":"testing.tRunner","msg":"this is a warn log"}
 {"level":"ERROR","ts":"2025-07-11T09:35:28.625+0200","caller":"testing/testing.go:1792","func":"testing.tRunner","msg":"this is a warn log"}
+{"level":"ERROR","ts":"2025-09-27T10:22:00.681+0200","caller":"testing/testing.go:1934","func":"testing.tRunner","msg":"this is a warn log"}
