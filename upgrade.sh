@@ -9,7 +9,7 @@ for gomod_file in $(find . -name "go.mod"); do
   echo "🔄 Running go-mod-upgrade in $dir ..."
 
   cd "$dir"
-  go-mod-upgrade
+  # go-mod-upgrade
   go mod tidy
   go test ./...
   cd "$ROOT_DIR"

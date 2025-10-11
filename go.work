@@ -1,0 +1,24 @@
+go 1.25.2
+
+use (
+	casbin
+	circuitbreaker
+	fgprof
+	fiberi18n
+	fibernewrelic
+	fibersentry
+	fiberzap
+	fiberzerolog
+	hcaptcha
+	jwt
+	loadshed
+	monitor
+	opafiber
+	otelfiber
+	otelfiber/example
+	paseto
+	socketio
+	swagger
+	testcontainers
+	websocket
+)
