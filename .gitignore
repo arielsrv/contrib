@@ -26,6 +26,3 @@
 # Dependencies
 vendor
 /Godeps/
-
-# Go workspace file
-go.work.sum
