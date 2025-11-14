@@ -1,6 +1,6 @@
 module github.com/gofiber/contrib/otelfiber/example
 
-go 1.24.4
+go 1.25.4
 
 require (
 	github.com/gofiber/contrib/otelfiber/v2 v2.2.3
