@@ -4,7 +4,7 @@ go 1.25.4
 
 require (
 	github.com/felixge/fgprof v0.9.5
-	github.com/gofiber/fiber/v2 v2.52.9
+	github.com/gofiber/fiber/v2 v2.52.10
 )
 
 require (

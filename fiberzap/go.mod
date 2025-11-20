@@ -3,7 +3,7 @@ module github.com/gofiber/contrib/fiberzap/v2
 go 1.25.4
 
 require (
-	github.com/gofiber/fiber/v2 v2.52.9
+	github.com/gofiber/fiber/v2 v2.52.10
 	github.com/stretchr/testify v1.11.1
 	github.com/valyala/fasthttp v1.68.0
 	go.uber.org/zap v1.27.0

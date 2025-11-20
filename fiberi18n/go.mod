@@ -3,7 +3,7 @@ module github.com/gofiber/contrib/fiberi18n/v2
 go 1.25.4
 
 require (
-	github.com/gofiber/fiber/v2 v2.52.9
+	github.com/gofiber/fiber/v2 v2.52.10
 	github.com/nicksnyder/go-i18n/v2 v2.6.0
 	golang.org/x/text v0.31.0
 	gopkg.in/yaml.v2 v2.4.0

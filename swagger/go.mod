@@ -4,7 +4,7 @@ go 1.25.4
 
 require (
 	github.com/go-openapi/runtime v0.29.2
-	github.com/gofiber/fiber/v2 v2.52.9
+	github.com/gofiber/fiber/v2 v2.52.10
 	github.com/stretchr/testify v1.11.1
 	gopkg.in/yaml.v2 v2.4.0
 )
