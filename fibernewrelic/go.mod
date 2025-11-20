@@ -4,7 +4,7 @@ go 1.25.4
 
 require (
 	github.com/gofiber/fiber/v2 v2.52.10
-	github.com/newrelic/go-agent/v3 v3.41.0
+	github.com/newrelic/go-agent/v3 v3.42.0
 	github.com/stretchr/testify v1.11.1
 )
 
