@@ -1,6 +1,6 @@
 module github.com/gofiber/contrib/casbin
 
-go 1.25.4
+go 1.25.5
 
 require (
 	github.com/casbin/casbin/v2 v2.135.0
@@ -19,5 +19,5 @@ require (
 	github.com/rivo/uniseg v0.4.7 // indirect
 	github.com/valyala/bytebufferpool v1.0.0 // indirect
 	github.com/valyala/fasthttp v1.68.0 // indirect
-	golang.org/x/sys v0.38.0 // indirect
+	golang.org/x/sys v0.39.0 // indirect
 )

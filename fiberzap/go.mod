@@ -1,6 +1,6 @@
 module github.com/gofiber/contrib/fiberzap/v2
 
-go 1.25.4
+go 1.25.5
 
 require (
 	github.com/gofiber/fiber/v2 v2.52.10
@@ -23,7 +23,7 @@ require (
 	github.com/rogpeppe/go-internal v1.14.1 // indirect
 	github.com/valyala/bytebufferpool v1.0.0 // indirect
 	go.uber.org/multierr v1.10.0 // indirect
-	golang.org/x/sys v0.38.0 // indirect
+	golang.org/x/sys v0.39.0 // indirect
 	gopkg.in/check.v1 v1.0.0-20201130134442-10cb98267c6c // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
