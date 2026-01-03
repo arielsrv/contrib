@@ -3,12 +3,12 @@ set -e
 
 # Some env variables
 BRANCH="main"
-REPO_URL="github.com/gofiber/docs.git"
+REPO_URL="github.com/arielsrv/docs.git"
 AUTHOR_EMAIL="github-actions[bot]@users.noreply.github.com"
 AUTHOR_USERNAME="github-actions[bot]"
 VERSION_FILE="contrib_versions.json"
 REPO_DIR="contrib"
-COMMIT_URL="https://github.com/gofiber/contrib"
+COMMIT_URL="https://github.com/arielsrv/contrib"
 DOCUSAURUS_COMMAND="npm run docusaurus -- docs:version:contrib"
 
 # Set commit author
