@@ -76,3 +76,6 @@
 {"level":"DEBUG","ts":"2026-01-03T11:02:14.609+0100","caller":"testing/testing.go:1934","func":"testing.tRunner","msg":"this is a debug log"}
 {"level":"ERROR","ts":"2026-01-03T11:02:14.609+0100","caller":"testing/testing.go:1934","func":"testing.tRunner","msg":"this is a warn log"}
 {"level":"DEBUG","ts":"2026-01-03T11:02:14.610+0100","caller":"testing/testing.go:1934","func":"testing.tRunner","msg":"this is a debug log"}
+{"level":"DEBUG","ts":"2026-01-03T13:36:17.117+0100","caller":"testing/testing.go:1934","func":"testing.tRunner","msg":"this is a debug log"}
+{"level":"ERROR","ts":"2026-01-03T13:36:17.117+0100","caller":"testing/testing.go:1934","func":"testing.tRunner","msg":"this is a warn log"}
+{"level":"DEBUG","ts":"2026-01-03T13:36:17.117+0100","caller":"testing/testing.go:1934","func":"testing.tRunner","msg":"this is a debug log"}
