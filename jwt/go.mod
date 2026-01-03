@@ -1,6 +1,6 @@
 module github.com/gofiber/contrib/jwt
 
-go 1.25.4
+go 1.25.5
 
 require (
 	github.com/MicahParks/keyfunc/v2 v2.1.0

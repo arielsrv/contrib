@@ -163,10 +163,10 @@ func New(config ...Config) fiber.Handler {
 
 	// Define UI Options
 	swaggerUIOpts := middleware.SwaggerUIOpts{
-		BasePath:         cfg.BasePath,
-		SpecURL:          specURL,
-		Path:             cfg.Path,
-		Title:            cfg.Title,
+		BasePath: cfg.BasePath,
+		SpecURL:  specURL,
+		Path:     cfg.Path,
+		Title:    cfg.Title,
 	}
 
 	if cfg.SwaggerURL != "" {
@@ -196,7 +196,7 @@ func New(config ...Config) fiber.Handler {
 		}
 
 		// Only respond to requests to SwaggerUI and SpecURL (swagger.json)
-		if !(c.Path() == swaggerUIPath || c.Path() == specURL) {
+		if c.Path() != swaggerUIPath && c.Path() != specURL {
 			return c.Next()
 		}
 
