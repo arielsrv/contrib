@@ -3,12 +3,12 @@ set -e
 
 # Some env variables
 BRANCH="main"
-REPO_URL="github.com/arielsrv/docs.git"
+REPO_URL="github.com/gofiber/docs.git"
 AUTHOR_EMAIL="github-actions[bot]@users.noreply.github.com"
 AUTHOR_USERNAME="github-actions[bot]"
 VERSION_FILE="contrib_versions.json"
 REPO_DIR="contrib"
-COMMIT_URL="https://github.com/arielsrv/contrib"
+COMMIT_URL="https://github.com/gofiber/contrib"
 DOCUSAURUS_COMMAND="npm run docusaurus -- docs:version:contrib"
 
 # Set commit author
@@ -57,10 +57,7 @@ elif [ "$EVENT" == "release" ]; then
 fi
 
 # Push changes
-# Only cd if we're handling a push event (release event already cd'd earlier)
-if [ "$EVENT" == "push" ]; then
-  cd fiber-docs/ || true
-fi
+cd fiber-docs/ || true
 git add .
 if [[ $EVENT == "push" ]]; then
     git commit -m "Add docs from ${COMMIT_URL}/commit/${latest_commit}"
