@@ -3,7 +3,7 @@ module github.com/gofiber/contrib/fibernewrelic
 go 1.25.5
 
 require (
-	github.com/gofiber/fiber/v2 v2.52.10
+	github.com/gofiber/fiber/v2 v2.52.11
 	github.com/newrelic/go-agent/v3 v3.42.0
 	github.com/stretchr/testify v1.11.1
 )
