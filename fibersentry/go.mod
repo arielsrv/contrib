@@ -3,7 +3,7 @@ module github.com/gofiber/contrib/fibersentry
 go 1.25.5
 
 require (
-	github.com/getsentry/sentry-go v0.42.0
+	github.com/getsentry/sentry-go v0.43.0
 	github.com/gofiber/fiber/v2 v2.52.12
 )
 
