@@ -1,6 +1,6 @@
 module github.com/gofiber/contrib/v3/coraza
 
-go 1.26.1
+go 1.26.2
 
 require (
 	github.com/corazawaf/coraza/v3 v3.7.0
@@ -18,7 +18,7 @@ require (
 	github.com/kaptinlin/go-i18n v0.3.1 // indirect
 	github.com/kaptinlin/jsonpointer v0.4.17 // indirect
 	github.com/kaptinlin/jsonschema v0.7.7 // indirect
-	github.com/kaptinlin/messageformat-go v0.4.19 // indirect
+	github.com/kaptinlin/messageformat-go v0.6.0 // indirect
 	github.com/klauspost/compress v1.18.5 // indirect
 	github.com/magefile/mage v1.17.1 // indirect
 	github.com/mattn/go-colorable v0.1.14 // indirect
