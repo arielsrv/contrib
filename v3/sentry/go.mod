@@ -1,6 +1,6 @@
 module github.com/gofiber/contrib/v3/sentry
 
-go 1.25.0
+go 1.26.2
 
 require (
 	github.com/getsentry/sentry-go v0.45.0

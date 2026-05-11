@@ -1,6 +1,6 @@
 module github.com/gofiber/contrib/v3/swaggerui
 
-go 1.25.0
+go 1.26.2
 
 require (
 	github.com/go-openapi/runtime v0.29.3
