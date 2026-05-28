@@ -31,6 +31,6 @@ require (
 	github.com/mattn/go-isatty v0.0.21 // indirect
 	github.com/stretchr/testify v1.11.1
 	github.com/valyala/bytebufferpool v1.0.0 // indirect
-	golang.org/x/sys v0.43.0 // indirect
+	golang.org/x/sys v0.45.0 // indirect
 	golang.org/x/text v0.36.0 // indirect
 )
