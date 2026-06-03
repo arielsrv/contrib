@@ -5,12 +5,12 @@ go 1.25.0
 require (
 	github.com/getsentry/sentry-go v0.45.0
 	github.com/gofiber/fiber/v3 v3.1.0
-	github.com/gofiber/utils/v2 v2.0.2
+	github.com/gofiber/utils/v2 v2.1.0
 )
 
 require (
 	github.com/davecgh/go-spew v1.1.2-0.20180830191138-d8f796af33cc // indirect
-	github.com/gofiber/schema v1.7.0 // indirect
+	github.com/gofiber/schema v1.7.2 // indirect
 	github.com/google/go-cmp v0.7.0 // indirect
 	github.com/kr/pretty v0.3.1 // indirect
 	github.com/philhofer/fwd v1.2.0 // indirect
