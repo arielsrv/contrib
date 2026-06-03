@@ -1,6 +1,6 @@
 module github.com/gofiber/contrib/v3/swaggo
 
-go 1.25.0
+go 1.26.3
 
 require (
 	github.com/gofiber/fiber/v3 v3.1.0
@@ -23,6 +23,8 @@ require (
 	github.com/go-openapi/swag/stringutils v0.25.5 // indirect
 	github.com/go-openapi/swag/typeutils v0.25.5 // indirect
 	github.com/go-openapi/swag/yamlutils v0.25.5 // indirect
+	github.com/go-openapi/testify/enable/yaml/v2 v2.4.1 // indirect
+	github.com/go-openapi/testify/v2 v2.4.1 // indirect
 	github.com/gofiber/schema v1.7.0 // indirect
 	github.com/google/go-cmp v0.7.0 // indirect
 	github.com/google/uuid v1.6.0 // indirect
