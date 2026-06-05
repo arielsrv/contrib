@@ -1,6 +1,6 @@
 module github.com/gofiber/contrib/v3/sentry
 
-go 1.25.0
+go 1.26.4
 
 require (
 	github.com/getsentry/sentry-go v0.45.0
@@ -32,5 +32,5 @@ require (
 	github.com/stretchr/testify v1.11.1
 	github.com/valyala/bytebufferpool v1.0.0 // indirect
 	golang.org/x/sys v0.43.0 // indirect
-	golang.org/x/text v0.36.0 // indirect
+	golang.org/x/text v0.37.0 // indirect
 )
